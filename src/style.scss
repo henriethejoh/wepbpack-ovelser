@@ -1,22 +1,20 @@
 @use "./scss/reset";
-@use "./scss/header";
-@use "./scss/primaryMenu";
-:root {
-	--mainBg: salmon;
+
+.boks {
+	width: 200px;
+	height: 200px;
+	background-color: lightskyblue;
+	margin-bottom: 1em;
+	transition: all 2s ease;
 }
 
-$light-text: moccasin;
 
-body {
-	background-color: var(--mainBg);
-	color: $light-text;
+.dims {
+	opacity: 0;
+	transform: translateY(-50px);
 }
-.container {
-	padding: 1rem;
-	display: flex;
-	background: linear-gradient(to top,  black, white);
-	h1 {
-		font-size: 3em;
-		text-align: center;
-	}
+
+.dims-on{
+	transform: translateY(50px);
+	opacity: 1;
 }
